@@ -21,12 +21,12 @@ Content-Type: application/json
 
 ### Get all todos GET /todos (protected)
 GET http://localhost:4500/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM3ODUxNjA2LCJleHAiOjE3Mzc5MzgwMDZ9.s6Rg6I7vqCtwmqG49CTbXg02d38lVdFCNg9GHdyUk3s
+Authorization: ### Insert JWT token here
 
 
 ### Create new todo POST /todos (protected)
 POST http://localhost:4500/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM3ODUxNjA2LCJleHAiOjE3Mzc5MzgwMDZ9.s6Rg6I7vqCtwmqG49CTbXg02d38lVdFCNg9GHdyUk3s
+Authorization: ### Insert JWT token here
 Content-Type: application/json
 
 {
@@ -35,8 +35,7 @@ Content-Type: application/json
 
 ### Update Todo PUT /TODOS/:ID (protected)
 PUT http://localhost:4500/todos/2
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM3ODUxNjA2LCJleHAiOjE3Mzc5MzgwMDZ9.s6Rg6I7vqCtwmqG49CTbXg02d38lVdFCNg9GHdyUk3s
-Content-Type: application/json
+Authorization: ### Insert JWT token here
 
 {
     "completed": 1
@@ -44,4 +43,4 @@ Content-Type: application/json
 
 ### Delete Todo DELETE /TODOS/:ID (protected)
 DELETE http://localhost:4500/todos/
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM3ODUxNjA2LCJleHAiOjE3Mzc5MzgwMDZ9.s6Rg6I7vqCtwmqG49CTbXg02d38lVdFCNg9GHdyUk3s
+Authorization: ### Insert JWT token here
